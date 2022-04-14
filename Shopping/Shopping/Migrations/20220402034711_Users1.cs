@@ -4,7 +4,7 @@
 
 namespace Shopping.Migrations
 {
-    public partial class addcategoryEntity2 : Migration
+    public partial class Users1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
