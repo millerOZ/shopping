@@ -10,8 +10,8 @@ namespace Shopping.Helpers
         private readonly CloudBlobClient _blobClient;
         public BlobHelper(IConfiguration configuration)
         {
-            string keys = configuration["Blob:ConnectionString"];
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(keys);
+            string keys = configuration["Blob:ConnectionString"]; 
+             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(keys);
             _blobClient = storageAccount.CreateCloudBlobClient();
         }
         public async Task DeleteBlobAsync(Guid id, string containerName)
